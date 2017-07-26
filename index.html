@@ -2,9 +2,229 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="//fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/css/materialize.min.css">
+    <link rel="stylesheet" href="css/style.css">
     <title>Ribron</title>
   </head>
   <body>
-    <h1>En construcción...</h1>
+    <script src="js/facebook-sdk.js"></script>
+
+    <div class="navbar-fixed">
+      <nav class="red darken-4">
+        <div class="nav-wrapper container">
+          <a href="#home" class="brand-logo"><img src="img/ribron-logo-white.png"></a>
+          <a href="#" data-activates="side-nav" class="button-collapse"><i class="material-icons">menu</i></a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#services"><i class="material-icons left">build</i>Servicios</a></li>
+            <li><a href="#news"><i class="fa fa-newspaper-o left"></i>Noticias</a></li>
+            <li><a href="#contact"><i class="fa fa-envelope-o left"></i>Contacto</a></li>
+          </ul>
+          <ul class="side-nav" id="side-nav">
+            <li><a href="#services">Servicios</a></li>
+            <li><a href="#news">Noticias</a></li>
+            <li><a href="#contact">Contacto</a></li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+
+    <section id="home" class="scrollspy container center-align section promo">
+      <h1>Bienvenido</h1>
+      <p class="light">Somos una empresa argentina con más de 60 años de trayectoria, especializada en el desarrollo, venta, alquiler, transporte y montaje de sistemas estructurales provisorios de uso intensivo en la construcción, en los eventos y en las industrias.</p>
+      <div class="row">
+        <div class="col l6">
+          <i class="fa fa-bullseye large"></i>
+          <h4>Misión</h4>
+          <p class="light">Desarrollar y materializar los proyectos de nuestros clientes, brindándoles servicios de montaje, alquiler y venta de estructuras tubulares con la más alta calidad, con la mayor rapidez y cumpliendo estrictamente las normas de seguridad.</p>
+        </div>
+        <div class="col l6">
+          <i class="fa fa-eye large"></i>
+          <h4>Visión</h4>
+          <p class="light">Liderar la provisión de materiales y servicios de montaje de estructuras tubulares tanto en la construcción como en la industria y en los eventos innovando permanentemente y creando tendencias en los diseños, procedimientos y materiales, fortaleciendo el concepto de compromiso y seriedad para con nuestros clientes y sociedad toda.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/estadio.jpg"></div>
+    </div>
+
+    <section id="services" class="scrollspy container promo center-align section">
+      <h1>Servicios</h1>
+      <div class="row">
+        <div class="col l4 s12">
+          <i class="fa fa-wrench large"></i>
+          <h4><a class="waves-effect waves-light modal-trigger" href="#obras">Obras</a></h4>
+          <p class="light">Realizamos andamios, apuntalamientos, entibaciones y todo tipo de estructuras temporarias.</p>
+        </div>
+        <div class="col l4 s12">
+          <i class="fa fa-calendar large"></i>
+          <h4><a class="waves-effect waves-light modal-trigger" href="#eventos">Eventos</a></h4>
+          <p class="light">Proveemos sistemas modulares de acople multidireccional que permiten afrontar con éxito todas las configuraciones posibles de eventos.</p>
+        </div>
+        <div class="col l4 s12">
+          <i class="fa fa-industry large"></i>
+          <h4><a class="waves-effect waves-light modal-trigger" href="#industrias">Industrias</a></h4>
+          <p class="light">Proveemos soluciones para el desarrollo de proyectos industriales, tanto en las edificaciones nuevas como en el mantenimiento y en la reparación de instalaciones existentes.</p>
+        </div>
+      </div>
+    </section>
+
+    <div id="obras" class="modal">
+      <div class="modal-content">
+        <h4>Obras</h4>
+        <p>Ribron posee más de 60 años de trayectoria en el rubro de la construcción y ha formado parte de grandes proyectos edilicios e industriales. Aportamos cumplimiento, profesionalismo y experiencia en obras de cualquier escala.</p>
+        <p>Realizamos andamios, apuntalamientos, entibaciones y todo tipo de estructuras temporarias. Trabajamos con sistema multidireccional de acople rápido y también con sistema tradicional de caños y nudos.</p>
+        <p>Nuestros servicios:</p>
+        <ul class="collection">
+          <li class="collection-item">Sistema Multidireccional de Acople Rápido</li>
+          <li class="collection-item">Apuntalamientos</li>
+          <li class="collection-item">Andamios para la Construcción</li>
+          <li class="collection-item">Andamios Prearmados</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="eventos" class="modal">
+      <div class="modal-content">
+        <h4>Eventos</h4>
+        <p>Proveemos sistemas modulares de acople multidireccional que permiten afrontar con éxito todas las configuraciones posibles de eventos: espectáculos, exposiciones, recitales, festivales, desfiles, carreras, campeonatos, torneos y celebraciones en general.</p>
+        <p>Más de 60 años ininterrumpidos de trayectoria nos permiten brindar un know-how altamente especializado.</p>
+        <p>Valoramos fundamentalmente la seguridad, la rapidez en el montaje y la configuración arquitectónica del proyecto, colaborando con los organizadores de eventos en el planeamiento y desarrollo del layout, suministrando planos, cálculos de ingeniería e imágenes 3D realizados con la tecnología más avanzada.</p>
+        <p>Brindamos soluciones integrales, por ejemplo, estadios completos, o bien, soluciones a medida, ampliando por ejemplo, instalaciones ya existentes.</p>
+        <p>Nuestros servicios:</p>
+        <ul class="collection">
+          <li class="collection-item">Tribunas y Gradas</li>
+          <li class="collection-item">Stands y Estructuras Publicitarias</li>
+          <li class="collection-item">Estructuras Especiales</li>
+          <li class="collection-item">Escenarios, Palcos y Tarimas</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="industrias" class="modal">
+      <div class="modal-content">
+        <h4>Industrias</h4>
+        <p>Proveemos soluciones para el desarrollo de proyectos industriales, tanto en las edificaciones nuevas como en el mantenimiento y en la reparación de instalaciones existentes. Diseñamos y montamos estructuras tubulares que se adaptan a cualquier forma o gemoetría, recubriendo las superficies interiores o exteriores de edificios, tanques, silos, chimeneas, hornos, calderas y todo tipo de instalación industrial.</p>
+        <p>Aportamos experiencia y cumplimiento para la ejecución ordenada de paradas de planta, mantenimiento, refacciones o nuevas instalaciones. Cumplimos estrictamente con las metodologías de trabajo seguro, las políticas medioambientales y los procesos de mejora contínua.</p>
+        <p>Brindamos asesoramiento profesional: planos, imágenes 3D y cálculos de ingeniería ejecutados con la tecnología digital más moderna. Coordinamos la logística de entrega, armado y desarmado, reduciendo tiempos y disminuyendo costos. Privilegiamos la satisfacción del cliente.</p>
+      </div>
+    </div>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/apuntalamiento.jpg"></div>
+    </div>
+
+    <section id="news" class="scrollspy container center-align section">
+      <h1>Noticias</h1>
+      <div class="row">
+        <div class="col s12">
+          <div class="fb-page" data-href="https://www.facebook.com/ribron" data-tabs="timeline" data-width="500" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/ribron"><a href="https://www.facebook.com/ribron">Ribron Estructuras Tubulares</a></blockquote></div></div>
+        </div>
+      </div>
+    </section>
+
+    <div class="parallax-container">
+      <div class="parallax"><img src="img/eventos.jpg"></div>
+    </div>
+
+    <section id="contact" class="scrollspy container center-align section">
+      <div class="row">
+        <div class="col s12">
+          <h1>Contacto</h1>
+          <form action="//formspree.io/info@ribron.com"
+                method="POST">
+            <div class="input-field">
+              <i class="material-icons prefix">face</i>
+              <input id="name" type="text" name="name" required>
+              <label for="name">Nombre</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">phone</i>
+              <input id="phone" type="tel" name="phone">
+              <label for="phone">Teléfono</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">email</i>
+              <input id="email" type="email" name="email" class="validate" required>
+              <label for="email">Email</label>
+            </div>
+            <div class="input-field">
+              <i class="material-icons prefix">feedback</i>
+              <textarea id="message" name="message" class="materialize-textarea" required></textarea>
+              <label for="message">Mensaje</label>
+            </div>
+            <input type="hidden" name="_subject" value="Contacto - Ribron Website">
+            <input type="text" name="_gotcha" style="display:none;">
+            <button class="btn waves-effect waves-light" type="submit">Enviar
+              <i class="material-icons right">send</i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="page-footer indigo darken-3">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 m6 s12">
+            <h5 class="white-text">Sucursal Rosario</h5>
+            <ul class="white-text">
+              <li><i class="fa fa-map-marker fa-fw"></i> <a class="blue-text text-lighten-3 waves-effect waves-light modal-trigger" href="#map-rosario">Cangallo 177 (Junín al 1000)</a></li>
+              <li><i class="fa fa-map-marker fa-fw"></i> Rosario, S2013FKC, Argentina</li>
+              <li><i class="fa fa-phone fa-fw"></i> +54 341 439-5560</li>
+              <li><i class="fa fa-envelope fa-fw"></i> rosario@ribron.com</li>
+            </ul>
+          </div>
+          <div class="col l6 m6 s12">
+            <h5 class="white-text">Sucursal Córdoba</h5>
+            <ul class="white-text">
+              <li><i class="fa fa-map-marker fa-fw"></i> <a class="blue-text text-lighten-3 waves-effect waves-light modal-trigger" href="#map-cordoba">Jerónimo Luis de Cabrera 585</a></li>
+              <li><i class="fa fa-map-marker fa-fw"></i> Córdoba, X5000GVK, Argentina</li>
+              <li><i class="fa fa-phone fa-fw"></i> +54 351 471-2370</li>
+              <li><i class="fa fa-envelope fa-fw"></i> cordoba@ribron.com</li>
+            </ul>
+          </div>
+          <div class="col l6 m6 s12">
+            <h5 class="white-text">Conéctese</h5>
+            <ul class="white-text">
+              <li><i class="fa fa-facebook fa-fw"></i><a class="grey-text text-lighten-3" href="https://www.facebook.com/ribron"> Facebook</a></li>
+              <li><i class="fa fa-twitter fa-fw"></i><a class="grey-text text-lighten-3" href="https://twitter.com/ribronok" target="_blank"> Twitter</a></li>
+              <li><i class="fa fa-linkedin fa-fw"></i><a class="grey-text text-lighten-3" href="https://www.linkedin.com/company/ribron" target="_blank"> LinkedIn</a></li>
+            </ul>
+          </div>
+          <div class="col l6 m6 s12">
+            <h5 class="white-text">Data Fiscal</h5>
+            <a href="http://qr.afip.gob.ar/?qr=oq1VzNCExMEGrTbOvM4mMw,," target="_blank"><img alt="Formulario 960 N.M." height="120" src="img/data-fiscal.jpg" /></a>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        © 2015 Ribron
+        <a class="grey-text text-lighten-4 right" href="https://www.juampi.com/">Desarrollado por Juan Pablo Rinaldi</a>
+        </div>
+      </div>
+    </footer>
+    
+    <div id="map-rosario" class="modal">
+      <div class="modal-content center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3348.9043842221286!2d-60.679959584931595!3d-32.927124378230026!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95b65355b6b2e241%3A0x5fbc932a6832c5fa!2sRibron!5e0!3m2!1sen!2sus!4v1449313125472" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <div id="map-cordoba" class="modal">
+      <div class="modal-content center">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.609071438412!2d-64.18697308497848!3d-31.39734110247234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298658c5da207%3A0xb3dc430ddb01a81e!2sRibron!5e0!3m2!1sen!2sus!4v1449313180161" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+      </div>
+    </div>
+
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/materialize/0.97.3/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/tawk.to.js"></script>
   </body>
 </html>
